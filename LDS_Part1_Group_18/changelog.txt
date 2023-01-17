@@ -1,0 +1,3 @@
+PART 1
+- Type "nvarchar" has been selected for every string attribute in SSMS. Previously some
+attributes were "nchars".
