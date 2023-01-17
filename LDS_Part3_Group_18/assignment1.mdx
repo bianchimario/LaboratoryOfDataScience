@@ -1,0 +1,15 @@
+with member correct2019 as
+([Measures].[Iscorrect],[Date].[Year].&[2019])
+
+member correct2020 as
+([Measures].[Iscorrect],[Date].[Year].&[2020])
+
+member percentage_improvement as
+case when correct2020 = 0 or correct2020 = NULL then 'Missing data'
+when correct2019 = 0  or correct2020 = NULL then 'Missing data'
+else ROUND(((correct2020-correct2019)/(correct2019)),2) end,
+format_string="percent"
+
+select {correct2019, correct2020, percentage_improvement} on columns,
+[User].[Userid].[Userid] on rows
+from [Group_18_cube];

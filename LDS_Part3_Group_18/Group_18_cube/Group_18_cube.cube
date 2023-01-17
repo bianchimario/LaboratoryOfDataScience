@@ -1,0 +1,470 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d15bef1f-6840-4505-8c4f-9d721c83d275" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Group_18_cube</ID>
+  <Name>Group_18_cube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="004eecab-d4ca-4772-87c4-92466c2f1981">
+      <ID>User</ID>
+      <Name>User</Name>
+      <DimensionID>User</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="63f6f73e-86db-412d-a59d-d00f839f2f4e">
+          <AttributeID>Userid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58e1ddb7-359f-4d19-86a3-2e5187f18bd2">
+          <AttributeID>Geoid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="90752140-6366-40bd-8db4-dfea24dac779">
+          <AttributeID>Dateid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24923484-76a7-436f-b81e-1681aae94713">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8fcc23bc-79b1-42b9-b448-817a76a80475">
+      <ID>Subject</ID>
+      <Name>Subject</Name>
+      <DimensionID>Subject</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d2276505-a8f6-415c-9289-b577d41a0368">
+          <AttributeID>Subjectid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45bdde48-3473-46b7-aa15-a68c3b846d91">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="db31be1f-8f38-48ba-9ecb-aa1ad5367942">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9c978ce7-61b8-4331-a66c-75ee801c305f">
+          <AttributeID>Dateid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="971cdfbf-1a1d-4c5b-8d63-a30a2603c1cf">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="799f9c9e-6abf-42eb-9d99-8203fe70af2c">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e06c22e-13b5-4baa-943a-c7aa3058ea4a">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd12bb83-d425-4abe-b755-51a167e49a73">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d74426cb-3e9e-4032-86c1-80dbf0e7f7c5">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="fb4df612-04e9-4ff1-ac10-dd635871bb15">
+          <HierarchyID>Gerarchia</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="fdaa9de1-494a-4d8a-a00e-e745c9ae5170">
+      <ID>Organization</ID>
+      <Name>Organization</Name>
+      <DimensionID>Organization</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f94c6a45-7532-46a1-b057-1b0fa764732b">
+          <AttributeID>Organizationid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="01faa242-08e6-40ec-a03d-0d10b15aa3c7">
+          <AttributeID>Groupid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b151617f-c521-427d-b594-4e992a881b45">
+          <AttributeID>Quizid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3f15d711-3c37-446c-8c1a-2c617573c253">
+          <AttributeID>Schemeofworkid</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="34c77e9d-c530-4349-9a8c-326d23fff1b7">
+      <ID>Geography</ID>
+      <Name>Geography</Name>
+      <DimensionID>Geography</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b93e3ae1-50cc-49fe-9738-b289998b4004">
+          <AttributeID>Geoid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66c70c7d-db59-4d19-883c-53f1b3afcb53">
+          <AttributeID>Country Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea8b8295-f809-4e9b-93a6-f42454dce26a">
+          <AttributeID>Continent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c104dda3-2227-4e2c-9750-698ccac3fb83">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6356bfcb-7edf-4d4e-9eb0-923445f011b7">
+          <AttributeID>Continent Extended</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="26d9eb24-f78e-47d5-9cb0-f8dad8422e4d">
+          <HierarchyID>Gerarchia</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="b636d45d-ab31-43e2-ba05-565daf1b850a">
+      <ID>User - Dateid</ID>
+      <Name>User - Dateid</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="55d75470-9ce7-448a-992d-033d5671e6aa">
+          <AttributeID>Dateid</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c17dfcb-3668-49af-93bb-e7a75fc6626d">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6377cff-3ec2-44c8-8c47-cd8a33572880">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f4d5dce-eae7-4842-a82d-df3f683d7982">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2378d8b7-a232-49b0-a3fe-badf54320379">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84498dda-d914-4684-ab94-d7977179a918">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="dc959547-8677-4024-aefe-317d931ad512">
+          <HierarchyID>Gerarchia</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="95905862-d933-4eac-8141-8ecce0508940">
+      <ID>Answers</ID>
+      <Name>Answers</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dc608c91-9406-4605-be62-57b746ed230f">
+          <ID>Questionid</ID>
+          <Name>Questionid</Name>
+          <Source dwd:design-time-name="c7d2f4ba-98a9-46b0-aa8d-fe9768e00cb1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="19b3592c-3fd2-4120-8037-4145323cc4cf">
+              <TableID>Group_18_Answers</TableID>
+              <ColumnID>questionid</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f19b984f-f60c-4dbc-af3b-2fd196655b15">
+          <ID>Answer Value</ID>
+          <Name>Answer Value</Name>
+          <Source dwd:design-time-name="1719010b-4666-4f68-966c-74aa692bcc32">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="27299838-da20-4264-83b7-c9876a01625c">
+              <TableID>Group_18_Answers</TableID>
+              <ColumnID>answer_value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4f18f8d1-218f-4ad7-b2ac-d20e0954ca13">
+          <ID>Correct Answer</ID>
+          <Name>Correct Answer</Name>
+          <Source dwd:design-time-name="91254f87-ffd0-45bc-8b5a-3481666b6ad8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="97266ad8-bb4b-44ee-a533-1189392acf75">
+              <TableID>Group_18_Answers</TableID>
+              <ColumnID>correct_answer</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7fc0c11f-f041-45c9-8ac5-92a127470e26">
+          <ID>Iscorrect</ID>
+          <Name>Iscorrect</Name>
+          <Source dwd:design-time-name="072b8352-16f8-4599-a455-bbd8f9bd7259">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="db29b367-8739-4628-9792-288a39bf0b41">
+              <TableID>Group_18_Answers</TableID>
+              <ColumnID>iscorrect</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4a42e77a-122a-42e2-8898-fe0363b42a0e">
+          <ID>Confidence</ID>
+          <Name>Confidence</Name>
+          <Source dwd:design-time-name="0bff5e34-ceea-4ba7-aec5-b6de4a72ad62">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="572ca867-0166-4963-9baa-e98ea069a2e9">
+              <TableID>Group_18_Answers</TableID>
+              <ColumnID>confidence</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e7bd7d8e-033c-421e-8245-f4226480e14a">
+          <ID>Notcorrect</ID>
+          <Name>Notcorrect</Name>
+          <Source dwd:design-time-name="cad05899-a096-4048-957c-d29b195eaddc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="84d61e9a-e594-4ad2-98ae-b236f1908271">
+              <TableID>Group_18_Answers</TableID>
+              <ColumnID>notcorrect</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="046b86e3-a242-449f-b2ba-0ee593969854">
+          <ID>Conteggio di Answers</ID>
+          <Name>Conteggio di Answers</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="70509acd-9488-40d7-8b58-1e69db05840e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6c779a6c-50e6-4c93-962a-c1cdf6d58e31">
+              <TableID>Group_18_Answers</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc3bf99b-aa38-4dc8-8582-49e68839ab8e">
+          <CubeDimensionID>User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="90f7cc24-907a-4369-abe4-4468ca1978a1">
+              <AttributeID>Userid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5fc5e770-5de1-44fd-b460-5b4399375e0d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d60385d-95ac-49b3-99a3-3441a9733864">
+                    <TableID>Group_18_Answers</TableID>
+                    <ColumnID>userid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="19fa54c5-d127-43fa-8722-6b558524afa9">
+          <CubeDimensionID>Subject</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="674e96d1-8037-49ca-bdeb-848957de675b">
+              <AttributeID>Subjectid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ca7e1ec1-dc26-4646-9740-9e1ef89cf763">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e15e8d2b-be53-48bd-87c4-3215972b41bc">
+                    <TableID>Group_18_Answers</TableID>
+                    <ColumnID>subjectid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="97d6c654-1cdb-486e-a537-92ea03d7517c">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d949920d-d340-48c2-a742-1690f3780811">
+              <AttributeID>Dateid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f1bb1094-51d0-414e-92d9-7786b93b7d2a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="694a9811-7366-4a94-9063-5935bd996448">
+                    <TableID>Group_18_Answers</TableID>
+                    <ColumnID>dateid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2ca7f9de-7bcc-4b6f-aa0b-a93dbb2d34c5">
+          <CubeDimensionID>Organization</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="04e748bf-55a2-488a-aa82-3623e7306b3c">
+              <AttributeID>Organizationid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9f7bcddd-8763-4f36-b89c-1edef9429594">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3d3ed509-9394-4530-a1b0-2360800b61a2">
+                    <TableID>Group_18_Answers</TableID>
+                    <ColumnID>organizationid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="52df793c-2626-4ba8-b1b0-a2b3b4662cd5">
+          <CubeDimensionID>Geography</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f7a8e0df-1736-4fde-9c36-afd0ca9b4cb7">
+              <AttributeID>Geoid</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Geoid</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="16ef62bf-45a7-44d4-ba31-361c08331c1f">
+          <CubeDimensionID>User - Dateid</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4a7e8c45-3112-4378-a076-b6aec8546163">
+              <AttributeID>Dateid</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>User</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Dateid</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a3c861f4-75b0-4be6-85c8-1e9426394499">
+      <ID>User</ID>
+      <Name>User</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="31e27d08-4dbb-42df-bf4d-029dcda6e8b6">
+          <ID>Conteggio di User</ID>
+          <Name>Conteggio di User</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ece6ba30-dd70-4652-b278-25ca0027fd5c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="cd52b2d9-47a8-47bd-af2d-5269c0b3c28d">
+              <TableID>Group_18_User</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="5138bd2b-7dc0-4005-a29d-6ec91968935e">
+          <CubeDimensionID>User</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2167cc7a-1efb-4755-840a-258d308591cd">
+              <AttributeID>Userid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6d04e31f-5a07-4f8e-bdc7-6ff5a69fa6b1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b85e6174-9300-43d3-b5af-f424a2e781d5">
+                    <TableID>Group_18_User</TableID>
+                    <ColumnID>userid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="06bf86f2-218c-472d-a29b-d4e804cc0a65">
+          <CubeDimensionID>Geography</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b21022b-2a02-4886-85b2-55d74ab60191">
+              <AttributeID>Geoid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a74b1309-afaf-4f88-9be2-81ea3de14a4d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d7b5e23-fbc5-4b67-a503-69a0718c6038">
+                    <TableID>Group_18_User</TableID>
+                    <ColumnID>geoid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b3e3ddae-b2c1-4362-bc9f-ae95f436e7f5">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2963efc5-c003-4c11-b799-6b9c47344144">
+              <AttributeID>Dateid</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8a8ac53a-0549-4311-842a-2266509ca298">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0463c3aa-42de-41fb-9929-fa9ebd923b13">
+                    <TableID>Group_18_User</TableID>
+                    <ColumnID>dateid</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="4f654f68-09a2-45f2-8141-ff0d1fc94787">
+    <DataSourceViewID>Group 18 DB</DataSourceViewID>
+  </Source>
+</Cube>

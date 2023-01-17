@@ -1,0 +1,19 @@
+
+// Cubo alternativo
+
+with member avg_incorrect_answers as
+[Measures].[Notcorrect]/[Measures].[Conteggio di User]
+
+member continent_avg as
+([User-Geo].[Gerarchia].currentmember.parent.parent.parent, avg_incorrect_answers)
+
+select {[Measures].[Notcorrect], continent_avg} on columns,
+filter(([User-Geo].[Gerarchia].[Userid],[User-Geo].[Continent].[Continent]),
+[Measures].[Notcorrect] >= continent_avg) on rows
+from [Group_18_cube_alt]
+
+
+
+
+
+

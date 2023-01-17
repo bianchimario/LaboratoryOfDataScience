@@ -1,0 +1,8 @@
+with member percentage_of_correct_answers as
+([Measures].[Iscorrect])/([Measures].[Conteggio di Answers]),
+format_string="percent"
+
+select {[Measures].[Conteggio di Answers],
+[Measures].[Iscorrect], percentage_of_correct_answers} on columns,
+([Subject].[Subjectid].[Subjectid], [Subject].[Description].[Description]) on rows
+from [Group_18_cube];
